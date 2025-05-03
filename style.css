@@ -1,0 +1,83 @@
+:root {
+  --bg: #ffffff;
+  --text: #333;
+  --accent: #0073b1;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+header {
+  background: var(--accent);
+  color: white;
+  padding: 1rem;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.profile-pic {
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+nav {
+  text-align: center;
+  background: #005e94;
+  padding: 0.5rem 0;
+}
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.section {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: white;
+}
+.resume-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #0073b1;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.resume-button:hover {
+  background-color: #005e94;
+}
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+body.dark {
+  --bg: #121212;
+  --text: #eee;
+  --accent: #0a84ff;
+}
